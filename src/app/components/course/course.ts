@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Courses } from '../../services/courses';
 
 @Component({
   selector: 'course',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
 })
 export class Course {
   title: string = 'List of Courses';
-  courses: string[] = ['Math 101', 'Science 101', 'Biology 100'];
+  courses: string[] = [];
+
+  // Dependency Injection
+  // When this component is created, angular finds and injects an instance of the Courses Service class and stores it into serviceVariable within constructor function.
+  constructor(serviceVariable: Courses) {
+    // We can use the serviceVariable to call getCourses function from Courses Service
+    this.courses = serviceVariable.getCourses();
+  }
 }
