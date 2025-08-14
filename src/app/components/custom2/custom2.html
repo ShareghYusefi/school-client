@@ -2,6 +2,7 @@
 <h2>{{ "Custom 2 Component" | uppercase }}</h2>
 {{ date | date }}
 
+<!-- style binding -->
 <div
   [style.background-color]="boxColor"
   [style.width.px]="boxSize"
@@ -11,6 +12,7 @@
   {{ boxColor }} box
 </div>
 
+<!-- ngStyle directive -->
 <div
   [ngStyle]="{
     'background-color': boxColor,
@@ -22,4 +24,5 @@
   {{ boxColor }} box
 </div>
 
+<!-- Event binding: () is when we bind a function from the component to DOM elements -->
 <button (click)="changeStyle()">Change Style</button>
