@@ -4,8 +4,8 @@ import { Component } from '@angular/core';
   selector: 'custom2',
   standalone: false,
   templateUrl: './custom2.html',
-  styleUrl: './custom2.css'
+  styleUrl: './custom2.css',
 })
 export class Custom2 {
-
+  date = new Date();
 }
