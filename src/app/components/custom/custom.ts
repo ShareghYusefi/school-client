@@ -12,4 +12,5 @@ export class Custom {
     url: 'https://tinyurl.com/358w8dup',
     alt: 'Cat Pouncing',
   };
+  colSpan = 2;
 }
