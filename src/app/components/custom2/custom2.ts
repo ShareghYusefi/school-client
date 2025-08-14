@@ -23,7 +23,7 @@ export class Custom2 {
     this.boxSize = Math.floor(Math.random() * 200) + 100;
   }
 
-  onKeyDown() {
-    console.log(this.email);
+  onKeyDown(emailValue: any) {
+    console.log(emailValue);
   }
 }
