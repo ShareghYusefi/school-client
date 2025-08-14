@@ -6,21 +6,12 @@ import { App } from './app';
 import { Custom } from './components/custom/custom';
 import { Custom2 } from './components/custom2/custom2';
 import { Course } from './components/course/course';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    App,
-    Custom,
-    Custom2,
-    Course
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [
-    provideBrowserGlobalErrorListeners()
-  ],
-  bootstrap: [App]
+  declarations: [App, Custom, Custom2, Course],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  providers: [provideBrowserGlobalErrorListeners()],
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}

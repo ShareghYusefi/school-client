@@ -26,3 +26,7 @@
 
 <!-- Event binding: () is when we bind a function from the component to DOM elements -->
 <button (click)="changeStyle()">Change Style</button>
+
+<!-- Two way binding: [(ngModel)] updates the component and the DOM in both directions. -->
+<!-- ngModel is a directive from angular FormsModule and must imported -->
+<input type="text" [(ngModel)]="email" (keydown.enter)="onKeyDown()" />

@@ -10,6 +10,7 @@ export class Custom2 {
   date = new Date();
   boxColor = 'blue';
   boxSize = 150;
+  email = 'Sharegh@robo.ca';
 
   changeStyle() {
     // change color randomly
@@ -20,5 +21,9 @@ export class Custom2 {
 
     // change the size randomly
     this.boxSize = Math.floor(Math.random() * 200) + 100;
+  }
+
+  onKeyDown() {
+    console.log(this.email);
   }
 }
