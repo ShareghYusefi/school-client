@@ -1,3 +1,25 @@
 <!-- Pipes: | are used to transform display data -->
 <h2>{{ "Custom 2 Component" | uppercase }}</h2>
 {{ date | date }}
+
+<div
+  [style.background-color]="boxColor"
+  [style.width.px]="boxSize"
+  [style.height.px]="boxSize"
+  class="d-flex"
+>
+  {{ boxColor }} box
+</div>
+
+<div
+  [ngStyle]="{
+    'background-color': boxColor,
+    'width.px': boxSize,
+    'height.px': boxSize
+  }"
+  class="d-flex"
+>
+  {{ boxColor }} box
+</div>
+
+<button (click)="changeStyle()">Change Style</button>

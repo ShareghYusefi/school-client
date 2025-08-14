@@ -10,7 +10,7 @@ import { Courses } from '../../services/courses';
 export class Course {
   title: string = 'List of Courses';
   courses: string[] = [];
-  booleanVariable = false;
+  booleanVariable = true;
 
   // Dependency Injection
   // When this component is created, angular finds and injects an instance of the Courses Service class and stores it into serviceVariable within constructor function.
