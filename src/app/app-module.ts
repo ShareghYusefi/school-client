@@ -7,9 +7,10 @@ import { Custom } from './components/custom/custom';
 import { Custom2 } from './components/custom2/custom2';
 import { Course } from './components/course/course';
 import { FormsModule } from '@angular/forms';
+import { ColofulBg } from './directives/coloful-bg';
 
 @NgModule({
-  declarations: [App, Custom, Custom2, Course],
+  declarations: [App, Custom, Custom2, Course, ColofulBg],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
