@@ -1,0 +1,12 @@
+<h2>Simple Calculator</h2>
+
+<label for="num1">Number 1: </label>
+<input type="text" [(ngModel)]="num1" />
+
+<label for="num2">Number 2: </label>
+<input type="text" [(ngModel)]="num2" />
+
+<!-- We can use + sign infront of number(unary plus) to coerce the variable into a number state  -->
+<p>
+  {{ num1 }} + {{ num2 }} = <strong>{{ total }}</strong>
+</p>

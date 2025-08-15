@@ -9,10 +9,11 @@ import { Course } from './components/course/course';
 import { FormsModule } from '@angular/forms';
 import { ColofulBg } from './directives/coloful-bg';
 import { CapitalizationPipe } from './pipes/capitalization-pipe';
+import { MathModule } from './math/math-module';
 
 @NgModule({
   declarations: [App, Custom, Custom2, Course, ColofulBg, CapitalizationPipe],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, MathModule], // import feature Math module
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })
