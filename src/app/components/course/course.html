@@ -5,9 +5,15 @@
   <li [ngClass]="{ 'text-lg-start': true }" *ngFor="let course of courses">
     {{ course }}
     <div [ngSwitch]="course">
-      <div *ngSwitchCase="'Math 101'">Math Course starts in 3 days.</div>
-      <div *ngSwitchCase="'Science 101'">Science Course starts in 1 days.</div>
-      <div *ngSwitchDefault>Unknown start date.</div>
+      <small *ngSwitchCase="'Math 101'">{{
+        "math Course starts in 3 days." | capitalization
+      }}</small>
+      <small *ngSwitchCase="'Science 101'">{{
+        "science Course starts in 1 days." | capitalization
+      }}</small>
+      <small *ngSwitchDefault>{{
+        "unknown start date." | capitalization
+      }}</small>
     </div>
   </li>
 </ul>
